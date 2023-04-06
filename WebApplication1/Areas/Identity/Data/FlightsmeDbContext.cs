@@ -27,7 +27,7 @@ public class FlightsmeUserEntityConfiguration : IEntityTypeConfiguration<Flights
 {
     void IEntityTypeConfiguration<FlightsmeUser>.Configure(EntityTypeBuilder<FlightsmeUser> builder)
     {
-        builder.Property(u => u.FirstName).HasMaxLength(16);
-        builder.Property(u => u.LastName).HasMaxLength(16);
+        builder.Property(u => u.FirstName).HasMaxLength(255);
+        builder.Property(u => u.LastName).HasMaxLength(255);
     }
 }
